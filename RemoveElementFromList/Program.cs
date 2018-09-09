@@ -13,25 +13,8 @@ namespace RemoveElementFromList
             int k = 3;
             //int k =10;
 
-            //-------------------------------------------
-            //var numbers = new Remover();
-            //var removeDuplicates = numbers.RemoveKFromList(list, k);
-
-            //Console.Read();
-            //--------------------------------------------
-
-            var listLength = list.Count;
-
-            HashSet<int> hSetList = new HashSet<int>(list);
-            var hashLength = hSetList.Count;
-
-            if (listLength != hashLength)
-            {
-                // Remove all list items with value of k.
-                // The lambda expression is the Predicate.
-                list.RemoveAll(x => x == k);
-            }
-            // Display results.
+            var numbers = new Remover();
+            var removeDuplicates = numbers.RemoveKFromList(list, k);
             foreach (int i in list)
             {
                 Console.WriteLine(i);
